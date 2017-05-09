@@ -49,8 +49,9 @@ function print_domains($type,$value)
         }
         $start_index = 0;
         $end_index = sizeof($options);
-
-		echo('<select name=<?=$type?> id=<?=$type?> size="1" style="width: 190px" class="dataSelect">');
+                ?>
+                <select name=<?=$type?> id=<?=$type?> size="1" style="width: 190px" class="dataSelect">
+                <?php
 		if ($value!=NULL) {
 			echo('<option value="'.$value. '" selected > '.$value.'</option>');
 			$temp = $value;
